@@ -20,7 +20,7 @@ public class PaddleControls : MonoBehaviour
 
 		Vector3 movement = new Vector2 (hAxis, 0)* speed * Time.deltaTime;
 
-		//rb.MovePosition (transform.position + movement);
-		rb.AddForce(movement);
+		rb.MovePosition (transform.position + movement);
+		//rb.AddForce(movement);
 	}
 }
