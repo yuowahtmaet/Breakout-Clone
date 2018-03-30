@@ -235,9 +235,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AddVelocity.cs" />
-    <Compile Include="Assets\MaxSpeed.cs" />
-    <Compile Include="Assets\PaddleControls.cs" />
+    <Compile Include="Assets\Scripts\AddVelocity.cs" />
+    <Compile Include="Assets\Scripts\MaxSpeed.cs" />
+    <Compile Include="Assets\Scripts\PaddleControls.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
