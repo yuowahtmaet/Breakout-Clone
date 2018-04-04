@@ -235,7 +235,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DeleteOnCollision.cs" />
     <Compile Include="Assets\Scripts\AddVelocity.cs" />
+    <Compile Include="Assets\Scripts\Brick.cs" />
     <Compile Include="Assets\Scripts\MaxSpeed.cs" />
     <Compile Include="Assets\Scripts\PaddleControls.cs" />
   </ItemGroup>
