@@ -16,11 +16,18 @@ public class PaddleControls : MonoBehaviour
 
 	void Update () 
 	{
-		float hAxis = Input.GetAxis ("Horizontal");
+		Vector3 mousePos = Input.mousePosition;
+		Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        Vector2 targetPosition = new Vector2(worldPos.x, transform.position.y);
 
-		Vector3 movement = new Vector2 (hAxis, 0)* speed * Time.deltaTime;
 
-		rb.MovePosition (transform.position + movement);
+        rb.MovePosition(Vector3.Lerp(transform.position,targetPosition,Time.deltaTime*speed));
+
+		//float hAxis = Input.GetAxis ("Horizontal");
+
+		//Vector3 movement = new Vector2 (hAxis, 0)* speed * Time.deltaTime;
+
+		//rb.MovePosition (transform.position + movement);
 		//rb.AddForce(movement);
 	}
 }
